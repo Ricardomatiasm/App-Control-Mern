@@ -47,23 +47,28 @@ class TurnoForm extends Component {
 
   render() {
     return (
-
+      
       <div className="card">
+      <h4> Añadir turno </h4>
         <div className="card-content">
-          <form className="col s15" onSubmit={this.addTurno}>
+          <form className="input-field col s3" onSubmit={this.addTurno}>
             <div className="row">
-              <label>Fecha
-                <input name="fecha" type="date"  onChange={this.handleChange} value={this.state.fecha} className="validate"/>
-              </label>
-              <label>Hora
-                <input name="hora" type="text" placeholder="Hora" onChange={this.handleChange} value={this.state.hora} className="validate"/>
-              </label>
-              <label>Cliente
-                <input name="cliente" type="text" placeholder="Cliente" onChange={this.handleChange} value={this.state.cliente} className="validate"/>
-              </label>
-              <label>Descripcion 
-                <textarea name="descripcion" placeholder="Agregue Aqui Una Descripcion Del Trabajo a Realizar" type="text" onChange={this.handleChange} value={this.state.descripcion} className="validate"/>
-              </label>
+             <span>Fecha</span>
+             <br />
+                <input style={{ width:"300px" }} name="fecha" type="date"  onChange={this.handleChange} value={this.state.fecha} className="validate" />
+                <br />
+             <span>Hora</span>    
+             <br />            
+             <input style={{ width:"300px" }} name="hora" type="text" placeholder="Hora" onChange={this.handleChange} value={this.state.hora} className="validate"/>
+             <br />
+             <span>Cliente</span>
+             <br />
+                <input style={{ width:"300px" }} name="cliente" type="text" placeholder="Cliente" onChange={this.handleChange} value={this.state.cliente} className="validate"/>
+                <br />
+             <span>Descripcion</span> 
+             <br />
+                <textarea style={{ width:"300px" }} name="descripcion" placeholder="Agregue Aqui Una Descripcion Del Trabajo a Realizar" type="text" onChange={this.handleChange} value={this.state.descripcion} className="validate"/>
+              
               </div>
             <button type="Submit" className="btn green darken-4">Guardar</button>
           </form>

@@ -65,8 +65,9 @@ class ClienteTabla extends Component {
 
 render() {
   return(
-    <div className="card">
-      <div className="card-content">
+    <div className="card" >
+    <input type="search" name="search" /><i className="material-icons">search</i>
+      <div className="card-content" >
         <table className="">
             <thead>
               <tr>
